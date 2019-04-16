@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <script src="/static/jquery-2.0.3.js"></script>
+</head>
+<body>
+<div id="recv"></div>
+
+    <label for="data">发送数据</label>
+    <input id="data" name="data" type="text">
+    <button id="send">send</button>
+
+
+
+<script>
+    $('#send').click(function () {
+       $.ajax({
+           type: 'POST',
+           url: '/api/',
+           data: {'data': $('#data').val()},
+           success: function (res) {
+               $("#data").val('')
+           }
+       })
+    });
+    function check(){
+        $.ajax({
+        type: 'GET',
+        url: '/api/',
+        success:function (res) {
+            $('#recv').html(res.data)
+        }
+    })
+    }
+    setInterval(check, 1000);
+</script>
+
+</body>
+</html>
