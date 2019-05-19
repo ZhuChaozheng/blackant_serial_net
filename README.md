@@ -2,7 +2,8 @@
 our lab plan to release our devices which are used in communication field through 4G. By utilizing our devices, you can send/receive data from web to serial. Now, we deceide to release our demo source code to help more people realize the function of ser2net especially ser2web.
 
 # about client
-client_read_send.py: read data from serial and send to web, run it on an equipment connected to a serial device\n
+client_read_send.py: read data from serial and send to web, run it on an equipment connected to a serial device
+  
 client_recv_write.py:read data from web and write to serial, run it on an equipment connected to a serial device
 ps: you may need to change the address
 
