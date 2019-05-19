@@ -15,6 +15,6 @@ cd blackant_serial_net\web
 
 export FLASK_APP=manage
 
-export FLASK_ENV=development # or production
+export FLASK_ENV=development
 
 flask run
