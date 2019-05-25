@@ -12,10 +12,7 @@ ps: you may need to change the address
 
 # start the server
 
-``cd blackant_serial_net\web
-
+```cd blackant_serial_net\web
 export FLASK_APP=manage
-
 export FLASK_ENV=development
-
-flask run``
+flask run```
