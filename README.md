@@ -8,11 +8,11 @@ client_read_send.py: read data from serial and send to web, run it on an equipme
   
 client_recv_write.py:read data from web and write to serial, run it on an equipment connected to a serial device like raspberry
 
-ps: you may need to change the address
+#### ps: you may need to change the address
 
 # start the server
 
 ```cd blackant_serial_net\web
 export FLASK_APP=manage
 export FLASK_ENV=development
-flask run```
+flask run
